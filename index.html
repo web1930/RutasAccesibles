@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rutas Accesibles · Programa comunitario de salud</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..700;1,14..32,400..700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== NAVEGACIÓN ===== -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold d-flex align-items-center" href="#inicio">
+                    <span class="brand-icon me-2">✦</span> Rutas Accesibles
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                    aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#itinerario">Itinerario</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#guia">Guía de trámites</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#derechos">Derechos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#barreras">Barreras</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#redes">Red de apoyo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                    <a href="#redes" class="btn btn-primary ms-2 d-none d-lg-inline-block">Sumarme</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ===== HERO CON CARRUSEL ===== -->
+        <section id="inicio" class="hero-section pt-5 mt-5">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 order-lg-1">
+                        <span class="badge bg-terracota mb-3">Programa comunitario</span>
+                        <h1 class="display-4 fw-bold lh-1 mb-3">
+                            El sistema de salud tiene <span class="text-terracota fst-italic">caminos</span>.<br />Te ayudamos a encontrarlos.
+                        </h1>
+                        <p class="lead text-secondary">Una guía pensada junto a vecinas, vecinos y trabajadores de los CAPS y CIC de Moreno para sacar turnos, conocer tus derechos y no atravesar esto en soledad.</p>
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a href="#itinerario" class="btn btn-primary btn-lg">Ver el itinerario paso a paso</a>
+                            <a href="#redes" class="btn btn-outline-secondary btn-lg">Conocer la red de apoyo</a>
+                        </div>
+                        <p class="mt-3 text-muted small"><i class="fas fa-qrcode me-2"></i>¿Llegaste por el póster de la sala de espera? Empezá por acá ↓</p>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div id="heroCarousel" class="carousel slide rounded-4 overflow-hidden shadow" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=500&fit=crop&crop=center" class="d-block w-100" alt="Personas en sala de espera" />
+                                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+                                        <p class="mb-0">Atención cálida y accesible en los CAPS del barrio.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=800&h=500&fit=crop&crop=center" class="d-block w-100" alt="Equipo de salud" />
+                                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+                                        <p class="mb-0">Trabajo interdisciplinario en el Centro de Integración Comunitaria.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=500&fit=crop&crop=center" class="d-block w-100" alt="Taller de cuidadores" />
+                                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+                                        <p class="mb-0">Taller "Cuidando al cuidador": un espacio de encuentro y apoyo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PILARES (3 columnas) ===== -->
+        <section id="pilares" class="py-5 bg-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge bg-terracota mb-2">Estructura del programa</span>
+                    <h2 class="display-5 fw-bold">Tres pilares para acompañarte</h2>
+                    <p class="text-secondary col-lg-8 mx-auto">Cada pilar responde a una pregunta distinta: cómo gestionar el trámite, qué derechos te amparan y con quién podés compartir el camino.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm p-3">
+                            <div class="card-body text-center">
+                                <div class="icon-circle bg-terracota text-white mb-3 mx-auto">1</div>
+                                <h5 class="card-title">Guía de supervivencia burocrática</h5>
+                                <p class="card-text text-secondary">Accesos directos en lenguaje sencillo para sacar turnos en el CAPS y el CIC, sin vueltas ni letra chica.</p>
+                                <a href="#guia" class="btn btn-outline-primary btn-sm">Ir a la guía →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm p-3">
+                            <div class="card-body text-center">
+                                <div class="icon-circle bg-success text-white mb-3 mx-auto">2</div>
+                                <h5 class="card-title">Derechos en salud</h5>
+                                <p class="card-text text-secondary">Cápsulas breves que recuerdan tu derecho a la accesibilidad y a la medicación, y qué hacer ante faltantes.</p>
+                                <a href="#derechos" class="btn btn-outline-primary btn-sm">Conocer tus derechos →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm p-3">
+                            <div class="card-body text-center">
+                                <div class="icon-circle bg-warning text-dark mb-3 mx-auto">3</div>
+                                <h5 class="card-title">Redes de apoyo y bienestar</h5>
+                                <p class="card-text text-secondary">Testimonios del taller "Cuidando al cuidador" para saber que no estás solo ni sola en esto.</p>
+                                <a href="#redes" class="btn btn-outline-primary btn-sm">Ver testimonios →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ITINERARIO TERAPÉUTICO ===== -->
+        <section id="itinerario" class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge bg-secondary mb-2">El recorrido real</span>
+                    <h2 class="display-5 fw-bold">Itinerario terapéutico en el CIC</h2>
+                    <p class="text-secondary col-lg-8 mx-auto">Basado en el trabajo de campo realizado en el CIC La Babiana y las 43 Unidades Sanitarias de Moreno. Así es como se construye el acceso a la rehabilitación.</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Paso 1 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="step-card bg-white p-4 rounded-4 shadow-sm h-100 d-flex flex-column border-start border-4 border-terracota">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <span class="fw-bold text-terracota display-6">01</span>
+                                <span class="badge bg-terracota bg-opacity-10 text-terracota">Atención aguda</span>
+                            </div>
+                            <h5>Hospital general</h5>
+                            <p class="text-secondary small">Ocurre el evento neuromotor (ej. ACV) y la persona es atendida en un hospital de nivel provincial o nacional, como el Hospital Posadas o el Garrahan.</p>
+                        </div>
+                    </div>
+                    <!-- Paso 2 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="step-card bg-white p-4 rounded-4 shadow-sm h-100 d-flex flex-column border-start border-4 border-success">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <span class="fw-bold text-success display-6">02</span>
+                                <span class="badge bg-success bg-opacity-10 text-success">Primer nivel</span>
+                            </div>
+                            <h5>Unidad Sanitaria (CAPS)</h5>
+                            <p class="text-secondary small">Tras el alta, la persona acude a una de las 43 Unidades Sanitarias de su barrio. Aquí se inicia el vínculo con el sistema local.</p>
+                        </div>
+                    </div>
+                    <!-- Paso 3 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="step-card bg-white p-4 rounded-4 shadow-sm h-100 d-flex flex-column border-start border-4 border-warning">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <span class="fw-bold text-warning-dark display-6">03</span>
+                                <span class="badge bg-warning bg-opacity-10 text-warning-dark">Descentralización</span>
+                            </div>
+                            <h5>Turno al CIC</h5>
+                            <p class="text-secondary small">Desde la unidad sanitaria local se gestiona el turno para el segundo nivel (CIC), evitando que el paciente viaje largas distancias solo para pedir la cita.</p>
+                        </div>
+                    </div>
+                    <!-- Paso 4 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="step-card bg-white p-4 rounded-4 shadow-sm h-100 d-flex flex-column border-start border-4 border-info">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <span class="fw-bold text-info display-6">04</span>
+                                <span class="badge bg-info bg-opacity-10 text-info">Admisión</span>
+                            </div>
+                            <h5>Evaluación de fisiatría</h5>
+                            <p class="text-secondary small">Ingreso al programa de rehabilitación del CIC mediante una evaluación médica especializada que determina las necesidades del paciente.</p>
+                        </div>
+                    </div>
+                    <!-- Paso 5 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="step-card bg-white p-4 rounded-4 shadow-sm h-100 d-flex flex-column border-start border-4 border-primary">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <span class="fw-bold text-primary display-6">05</span>
+                                <span class="badge bg-primary bg-opacity-10 text-primary">Clave</span>
+                            </div>
+                            <h5>Entrevista con Trabajo Social</h5>
+                            <p class="text-secondary small">Paso fundamental e inmediato. Se identifican barreras socioeconómicas, ambientales, violencia de género o dificultades para acceder a medicación. <strong>No es un trámite de control, es para ayudarte.</strong></p>
+                        </div>
+                    </div>
+                    <!-- Paso 6 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="step-card bg-white p-4 rounded-4 shadow-sm h-100 d-flex flex-column border-start border-4 border-terracota">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <span class="fw-bold text-terracota display-6">06</span>
+                                <span class="badge bg-terracota bg-opacity-10 text-terracota">Tratamiento</span>
+                            </div>
+                            <h5>Abordaje interdisciplinario</h5>
+                            <p class="text-secondary small">Inicio de terapia a largo plazo con kinesiología, terapia ocupacional, fonoaudiología, psicología, psicopedagogía y enfermería. <strong>Sin límite de sesiones.</strong></p>
+                        </div>
+                    </div>
+                    <!-- Paso 7 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="step-card bg-white p-4 rounded-4 shadow-sm h-100 d-flex flex-column border-start border-4 border-success">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <span class="fw-bold text-success display-6">07</span>
+                                <span class="badge bg-success bg-opacity-10 text-success">Inclusión</span>
+                            </div>
+                            <h5>Dispositivos de mantenimiento</h5>
+                            <p class="text-secondary small">Una vez cumplidos los objetivos clínicos, el paciente pasa a grupos de educación física deportiva, taller de huerta con el INTA o estimulación neurocognitiva para no perder lo avanzado.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- BANNER DEL CIC CON DATOS REALES -->
+                <div class="mt-5 p-4 p-md-5 bg-dark text-white rounded-4">
+                    <div class="row align-items-center text-center text-md-start">
+                        <div class="col-md-8">
+                            <h5><i class="fas fa-building me-2"></i>CIC La Babiana · Centro de Rehabilitación Neuromotora</h5>
+                            <p class="text-white-50 small mb-1"><i class="fas fa-map-pin me-2"></i>Obrien 2989, Moreno, Provincia de Buenos Aires</p>
+                            <p class="text-white-50 small mb-1"><i class="fas fa-phone me-2"></i>0237 466-9211 (interno 2057)</p>
+                            <p class="text-white-50 small mb-1"><i class="far fa-clock me-2"></i>Lunes a viernes de 9:30 a 14:00 hs (consultar por ampliación)</p>
+                            <p class="text-white-50 small"><i class="far fa-envelope me-2"></i>comunicacionsaludmoreno@gmail.com</p>
+                            <p class="text-white-50 small mt-2"><i class="fas fa-info-circle me-2"></i>Único servicio municipal especializado en discapacidad neuromotora. Atiende desde los 5 años, con 150 pacientes activos.</p>
+                        </div>
+                        <div class="col-md-4 mt-3 mt-md-0 text-md-end">
+                            <span class="badge bg-light text-dark p-2"><i class="fas fa-qrcode me-1"></i> Escaneá el código del póster</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GUÍA DE TRÁMITES (Pilar 1) ===== -->
+        <section id="guia" class="py-5 bg-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge bg-terracota mb-2">Pilar 1</span>
+                    <h2 class="display-5 fw-bold">Guía de supervivencia burocrática</h2>
+                    <p class="text-secondary col-lg-8 mx-auto">El paso a paso para gestionar turnos y trámites en el CAPS y el CIC, explicado como te lo explicaría un vecino que ya hizo la cola.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="step-card bg-light p-4 rounded-4 shadow-sm h-100 d-flex flex-column">
+                            <div class="step-number fw-bold text-terracota display-6">1</div>
+                            <h5 class="mt-2">Sacar turno en el CAPS</h5>
+                            <p class="text-secondary small">Pedilo por teléfono, en mostrador o por la app del centro. Llevá tu DNI y, si tenés, tu carnet del centro.</p>
+                            <span class="badge bg-terracota bg-opacity-10 text-terracota align-self-start">5 min de lectura</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="step-card bg-light p-4 rounded-4 shadow-sm h-100 d-flex flex-column">
+                            <div class="step-number fw-bold text-terracota display-6">2</div>
+                            <h5 class="mt-2">Turno para especialista vía CIC</h5>
+                            <p class="text-secondary small">El CAPS deriva al Centro de Integración Comunitaria cuando hace falta un especialista que no está en el barrio.</p>
+                            <span class="badge bg-success bg-opacity-10 text-success align-self-start">Trámite con derivación</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="step-card bg-light p-4 rounded-4 shadow-sm h-100 d-flex flex-column">
+                            <div class="step-number fw-bold text-terracota display-6">3</div>
+                            <h5 class="mt-2">¿Perdiste el turno o llegás tarde?</h5>
+                            <p class="text-secondary small">Esto es lo que podés hacer y a quién avisar para no perder el lugar en la lista.</p>
+                            <span class="badge bg-warning bg-opacity-10 text-warning-dark align-self-start">Resolución rápida</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="step-card bg-light p-4 rounded-4 shadow-sm h-100 d-flex flex-column">
+                            <div class="step-number fw-bold text-terracota display-6">4</div>
+                            <h5 class="mt-2">Documentación que conviene llevar</h5>
+                            <p class="text-secondary small">Una lista simple para no volver dos veces: DNI, carnet, recetas anteriores y resultados de estudios.</p>
+                            <span class="badge bg-info bg-opacity-10 text-info align-self-start">Checklist imprimible</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accesos directos -->
+                <div class="mt-5 p-4 bg-dark text-white rounded-4">
+                    <h4 class="mb-3"><i class="fas fa-link me-2"></i>Accesos directos</h4>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <a href="#" class="d-block text-white text-decoration-none bg-white bg-opacity-10 p-3 rounded-3 hover-bg-opacity-20">
+                                <i class="fas fa-calendar-check me-2"></i> Sacar turno online
+                                <small class="d-block text-white-50">Formulario simplificado, 3 pasos</small>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="d-block text-white text-decoration-none bg-white bg-opacity-10 p-3 rounded-3 hover-bg-opacity-20">
+                                <i class="fas fa-phone me-2"></i> Línea telefónica del CAPS
+                                <small class="d-block text-white-50">Horarios y números por barrio</small>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="d-block text-white text-decoration-none bg-white bg-opacity-10 p-3 rounded-3 hover-bg-opacity-20">
+                                <i class="fas fa-file-alt me-2"></i> Cómo pedir un certificado
+                                <small class="d-block text-white-50">Paso a paso con ejemplo</small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DERECHOS (Pilar 2) ===== -->
+        <section id="derechos" class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge bg-success mb-2">Pilar 2</span>
+                    <h2 class="display-5 fw-bold">Derechos en salud</h2>
+                    <p class="text-secondary col-lg-8 mx-auto">Cápsulas informativas, como los pósters que viste en la sala de espera, para recordar lo que te corresponde y cómo reclamarlo.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="capsula h-100 p-4 rounded-4 shadow-sm bg-white">
+                            <div class="capsula-icon text-terracota mb-3"><i class="fas fa-pills fa-3x"></i></div>
+                            <h5>Derecho a la medicación</h5>
+                            <p class="text-secondary small">Tenés derecho a recibir la medicación indicada en tu tratamiento de forma gratuita o accesible en el sistema público.</p>
+                            <ul class="list-unstyled small">
+                                <li class="mb-2"><i class="fas fa-check-circle text-terracota me-2"></i>Si falta el medicamento, pedí que quede asentado por escrito.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-terracota me-2"></i>Pedí una alternativa terapéutica al profesional.</li>
+                                <li><i class="fas fa-check-circle text-terracota me-2"></i>Consultá en la farmacia del CIC más cercano.</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary btn-sm mt-2">Qué hacer ante un faltante →</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="capsula h-100 p-4 rounded-4 shadow-sm bg-white">
+                            <div class="capsula-icon text-success mb-3"><i class="fas fa-universal-access fa-3x"></i></div>
+                            <h5>Derecho a la accesibilidad</h5>
+                            <p class="text-secondary small">Los centros de salud deben garantizar accesos, traducción e información clara, sin importar tu condición o idioma.</p>
+                            <ul class="list-unstyled small">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Pedí explicación en lenguaje simple si algo no se entiende.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Solicitá intérprete o apoyo si lo necesitás.</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i>El edificio debe contar con accesos sin barreras físicas.</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-success btn-sm mt-2">Cómo pedir una adaptación →</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="capsula h-100 p-4 rounded-4 shadow-sm bg-white">
+                            <div class="capsula-icon text-warning mb-3"><i class="fas fa-file-signature fa-3x"></i></div>
+                            <h5>Ante una barrera administrativa</h5>
+                            <p class="text-secondary small">Si un trámite se traba sin motivo claro, existen pasos concretos para destrabarlo sin perder el turno conseguido.</p>
+                            <ul class="list-unstyled small">
+                                <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i>Pedí el motivo de la demora por escrito o por mail.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i>Recurrí al área de Atención al Usuario del centro.</li>
+                                <li><i class="fas fa-check-circle text-warning me-2"></i>Acompañate de un promotor de salud si lo necesitás.</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-warning btn-sm mt-2">Ver el reclamo modelo →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BARRERAS Y FACILITADORES ===== -->
+        <section id="barreras" class="py-5 bg-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge bg-danger mb-2">Análisis del sistema</span>
+                    <h2 class="display-5 fw-bold">Barreras y facilitadores en el acceso</h2>
+                    <p class="text-secondary col-lg-8 mx-auto">Identificados durante el trabajo de campo en el CIC de Moreno. Conocerlos es el primer paso para sortearlos.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="p-4 bg-danger bg-opacity-10 rounded-4 h-100 border border-danger border-opacity-25">
+                            <h4 class="text-danger"><i class="fas fa-ban me-2"></i>Barreras (Obstáculos)</h4>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-3 d-flex gap-3">
+                                    <i class="fas fa-building text-danger mt-1"></i>
+                                    <div><strong>Arquitectónicas:</strong> El desafío de trasladar a una persona con secuelas neuromotoras desde el barrio hasta el CIC.</div>
+                                </li>
+                                <li class="mb-3 d-flex gap-3">
+                                    <i class="fas fa-deaf text-danger mt-1"></i>
+                                    <div><strong>Comunicacionales:</strong> Necesidad de incluir lengua de señas o lectura de labios para no vulnerar derechos de personas sordas.</div>
+                                </li>
+                                <li class="mb-3 d-flex gap-3">
+                                    <i class="fas fa-clock text-danger mt-1"></i>
+                                    <div><strong>Burocráticas:</strong> Demoras para acceder a estudios de alta complejidad tecnológica, como tomografías.</div>
+                                </li>
+                                <li class="d-flex gap-3">
+                                    <i class="fas fa-prescription-bottle text-danger mt-1"></i>
+                                    <div><strong>Faltante crónico de insumos:</strong> Desfinanciamiento de programas nacionales y sobrecarga de nuevos sistemas administrativos.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-4 bg-success bg-opacity-10 rounded-4 h-100 border border-success border-opacity-25">
+                            <h4 class="text-success"><i class="fas fa-check-circle me-2"></i>Facilitadores (Soluciones)</h4>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-3 d-flex gap-3">
+                                    <i class="fas fa-people-arrows text-success mt-1"></i>
+                                    <div><strong>Articulación territorial:</strong> Los turnos se gestionan directamente en los CAPS de barrio, descentralizando la demanda.</div>
+                                </li>
+                                <li class="mb-3 d-flex gap-3">
+                                    <i class="fas fa-hand-holding-heart text-success mt-1"></i>
+                                    <div><strong>Entrevista obligatoria de Trabajo Social:</strong> Humaniza el ingreso y detecta necesidades socioeconómicas y de violencia de género.</div>
+                                </li>
+                                <li class="mb-3 d-flex gap-3">
+                                    <i class="fas fa-infinity text-success mt-1"></i>
+                                    <div><strong>Atención gratuita prolongada:</strong> Sin límite de sesiones, lo que permite tratamientos completos sin presión.</div>
+                                </li>
+                                <li class="d-flex gap-3">
+                                    <i class="fas fa-user-md text-success mt-1"></i>
+                                    <div><strong>Actitud empática del equipo:</strong> Los profesionales actúan como "facilitadores" de trámites, no solo como técnicos.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ENFOQUE RBC ===== -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <span class="badge bg-dark mb-2">Enfoque comunitario</span>
+                        <h2 class="display-5 fw-bold">Rehabilitación Basada en la Comunidad (RBC)</h2>
+                        <p class="text-secondary">El abordaje de la claudicación del cuidador desde una mirada ecológica y social.</p>
+                        <div class="mt-4">
+                            <p><i class="fas fa-quote-left text-terracota me-2"></i> <strong>Desmedicalizar la claudicación:</strong> No es un fracaso clínico del familiar, sino el resultado de un entorno discapacitante caracterizado por trámites engorrosos y faltantes crónicos.</p>
+                            <p><i class="fas fa-users text-terracota me-2"></i> <strong>Asistencia Personal (AP):</strong> Una estrategia fundamental para redistribuir las tareas de cuidado. Implementar la AP como política pública previene la claudicación y promueve la vida independiente.</p>
+                            <p><i class="fas fa-flag text-terracota me-2"></i> <strong>Empoderamiento político:</strong> Transformar los talleres en espacios de abogacía, donde las familias aprendan a reclamar medicamentos y agilizar estudios como sujetos de derecho.</p>
+                            <p><i class="fas fa-handshake text-terracota me-2"></i> <strong>Agentes Comunitarios de Cuidado:</strong> Articular una red intersectorial (salud, educación, organizaciones sociales, INTA) para redistribuir el cuidado en el territorio.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=400&fit=crop&crop=center" alt="Trabajo comunitario" class="img-fluid rounded-4 shadow" />
+                        <div class="mt-3 p-3 bg-white rounded-4 shadow-sm">
+                            <p class="small text-secondary mb-0"><i class="fas fa-arrow-right text-terracota me-2"></i>"El cuidado es un derecho, no una carga individual que deba sufrirse en silencio." — Taller "Cuidando al cuidador"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== RED DE APOYO (Pilar 3) con CARRUSEL ===== -->
+        <section id="redes" class="py-5 bg-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge bg-warning text-dark mb-2">Pilar 3</span>
+                    <h2 class="display-5 fw-bold">Redes de apoyo y bienestar</h2>
+                    <p class="text-secondary col-lg-8 mx-auto">Voces de pares y cuidadores que ya transitaron este camino. Compartir la experiencia es, muchas veces, el primer paso para sentirse acompañado.</p>
+                </div>
+                <!-- Carrusel de testimonios -->
+                <div id="testimoniosCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="testimonio bg-light p-5 rounded-4 shadow-sm text-center">
+                                        <i class="fas fa-quote-left fa-2x text-terracota mb-3"></i>
+                                        <p class="fs-5 fst-italic">"La primera vez que vine al CAPS no entendía nada de los turnos. Una vecina del taller me explicó todo y ahora soy yo la que acompaña a otros."</p>
+                                        <div class="mt-3">
+                                            <div class="fw-bold">Mirta, 64 años</div>
+                                            <div class="text-secondary small">Participante del taller "Cuidando al cuidador"</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="testimonio bg-light p-5 rounded-4 shadow-sm text-center">
+                                        <i class="fas fa-quote-left fa-2x text-terracota mb-3"></i>
+                                        <p class="fs-5 fst-italic">"Cuidar a mi papá me dejaba sin tiempo ni energía para mí. En el grupo encontré gente que entendía eso sin que tuviera que explicarlo."</p>
+                                        <div class="mt-3">
+                                            <div class="fw-bold">Rubén, 51 años</div>
+                                            <div class="text-secondary small">Cuidador familiar</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="testimonio bg-light p-5 rounded-4 shadow-sm text-center">
+                                        <i class="fas fa-quote-left fa-2x text-terracota mb-3"></i>
+                                        <p class="fs-5 fst-italic">"Pensé que era la única a la que se le complicaba pedir los estudios. Escuchar a otras me bajó la ansiedad antes de ir al centro."</p>
+                                        <div class="mt-3">
+                                            <div class="fw-bold">Susana, 58 años</div>
+                                            <div class="text-secondary small">Vecina del barrio, participante del programa</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+                <!-- Taller banner -->
+                <div class="mt-5 p-4 p-md-5 bg-dark text-white rounded-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h4 class="mb-2"><i class="fas fa-hand-holding-heart me-2"></i>Taller "Cuidando al cuidador"</h4>
+                            <p class="text-white-50 mb-0">Un espacio de encuentro semanal para compartir experiencias, aprender herramientas de autocuidado y construir red entre vecinas, vecinos y cuidadores familiares.</p>
+                        </div>
+                        <div class="col-md-4 mt-3 mt-md-0 text-md-end">
+                            <p class="mb-1 small"><i class="far fa-calendar-alt me-2"></i>Jueves, 16:30 hs</p>
+                            <p class="mb-3 small"><i class="fas fa-location-dot me-2"></i>Salón comunitario</p>
+                            <a href="#" class="btn btn-warning text-dark">Sumarme al próximo encuentro</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-dark text-white py-5" id="contacto">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <a class="navbar-brand fw-bold text-white d-flex align-items-center" href="#inicio">
+                        <span class="brand-icon me-2">✦</span>Rutas Accesibles
+                    </a>
+                    <p class="text-white-50 small mt-2">Programa comunitario para acompañar el acceso a la salud en CAPS, CIC y centros comunitarios del barrio.</p>
+                    <div class="mt-3">
+                        <p class="text-white-50 small mb-1"><i class="fas fa-phone me-2"></i>0237 466-9211 (interno 2057)</p>
+                        <p class="text-white-50 small mb-1"><i class="far fa-envelope me-2"></i>comunicacionsaludmoreno@gmail.com</p>
+                        <p class="text-white-50 small"><i class="fas fa-map-pin me-2"></i>Obrien 2989, Moreno, PBA</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Recorrido</h6>
+                    <ul class="list-unstyled small text-white-50">
+                        <li><a href="#itinerario" class="text-white-50 text-decoration-none">Itinerario terapéutico</a></li>
+                        <li><a href="#guia" class="text-white-50 text-decoration-none">Guía de trámites</a></li>
+                        <li><a href="#derechos" class="text-white-50 text-decoration-none">Tus derechos</a></li>
+                        <li><a href="#barreras" class="text-white-50 text-decoration-none">Barreras y facilitadores</a></li>
+                        <li><a href="#redes" class="text-white-50 text-decoration-none">Red de apoyo</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Contacto directo</h6>
+                    <ul class="list-unstyled small text-white-50">
+                        <li><a href="tel:+5402374669211" class="text-white-50 text-decoration-none"><i class="fas fa-phone me-2"></i>Llamar al CIC</a></li>
+                        <li><a href="https://wa.me/5402374669211" class="text-white-50 text-decoration-none"><i class="fab fa-whatsapp me-2"></i>WhatsApp</a></li>
+                        <li><a href="mailto:comunicacionsaludmoreno@gmail.com" class="text-white-50 text-decoration-none"><i class="far fa-envelope me-2"></i>Enviar sugerencia</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary border-opacity-25 my-4" />
+            <div class="d-flex flex-wrap justify-content-between small text-white-50">
+                <span>© 2026 Rutas Accesibles · Material basado en trabajo de campo real.</span>
+                <span>Sitio diseñado para lectura accesible</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>

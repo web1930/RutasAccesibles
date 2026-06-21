@@ -1,0 +1,148 @@
+/* ========================================
+   style.css - Rutas Accesibles
+   Estilos personalizados sobre Bootstrap 5
+   ======================================== */
+
+:root {
+    --terracota: #c9693e;
+    --terracota-dark: #a8522d;
+    --terracota-claro: #e8c9b5;
+    --verde-sabio: #3b7a6b;
+    --warm-bg: #faf7f2;
+    --shadow-card: 0 8px 25px rgba(30, 43, 46, 0.07);
+}
+
+/* --- Tipografía global --- */
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--warm-bg);
+    color: #1e2b2e;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, .display-5, .display-4 {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* --- Colores personalizados --- */
+.bg-terracota {
+    background-color: var(--terracota) !important;
+}
+.text-terracota {
+    color: var(--terracota) !important;
+}
+.btn-primary {
+    background-color: var(--terracota);
+    border-color: var(--terracota);
+}
+.btn-primary:hover {
+    background-color: var(--terracota-dark);
+    border-color: var(--terracota-dark);
+}
+.btn-outline-primary {
+    color: var(--terracota);
+    border-color: var(--terracota);
+}
+.btn-outline-primary:hover {
+    background-color: var(--terracota);
+    border-color: var(--terracota);
+    color: #fff;
+}
+.text-warning-dark {
+    color: #b88a1e !important;
+}
+
+/* --- Brand / Logo --- */
+.brand-icon {
+    font-size: 1.6rem;
+    line-height: 1;
+    color: var(--terracota);
+}
+
+/* --- Hero --- */
+.hero-section {
+    padding-top: 80px !important;
+}
+@media (min-width: 992px) {
+    .hero-section {
+        padding-top: 100px !important;
+    }
+}
+
+/* --- Iconos circulares para los pilares --- */
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+/* --- Step cards (Itinerario y Guía) --- */
+.step-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.step-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card);
+}
+.step-number {
+    font-family: 'Playfair Display', serif;
+}
+
+/* --- Cápsulas de derechos --- */
+.capsula {
+    transition: transform 0.2s ease;
+}
+.capsula:hover {
+    transform: translateY(-4px);
+}
+
+/* --- Testimonios --- */
+.testimonio {
+    border-left: 4px solid var(--terracota);
+}
+
+/* --- Carruseles personalizados --- */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(30, 43, 46, 0.6);
+    border-radius: 50%;
+    padding: 20px;
+    background-size: 50% 50%;
+}
+.carousel-caption {
+    bottom: 15px;
+    left: 15%;
+    right: 15%;
+}
+
+/* --- Hover para enlaces en fondos oscuros --- */
+.hover-bg-opacity-20:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* --- Ajustes de espaciado en móviles --- */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    .display-5 {
+        font-size: 2rem;
+    }
+    .carousel-caption {
+        display: none !important;
+    }
+}
+
+/* --- Estilo para el borde de los pasos del itinerario --- */
+.border-terracota {
+    border-color: var(--terracota) !important;
+}
+.border-warning-dark {
+    border-color: #b88a1e !important;
+}
